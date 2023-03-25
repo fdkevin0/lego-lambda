@@ -1,0 +1,50 @@
+name: deploy to lambda
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "**.md"
+      - "**.txt"
+  pull_request:
+
+permissions:
+  id-token: write # This is required for requesting the JWT
+  contents: read  # This is required for actions/checkout
+
+jobs:
+  deploy_zip:
+    name: deploy lambda function
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        functions:
+          - directory: .
+            function_name: lego-lambda
+    steps:
+      - name: checkout source code
+        uses: actions/checkout@v3
+      - name: Install Go
+        uses: actions/setup-go@v3
+
+      - name: Build binary
+        working-directory: ${{ matrix.functions.directory }}
+        run: |
+          CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o main .
+          zip deployment.zip main
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          role-to-assume: arn:aws:iam::486476404560:role/GitHubAction
+          aws-region: us-east-2
+
+      - name: deploy to aws lambda
+        working-directory: ${{ matrix.functions.directory }}
+        run: |
+          aws lambda update-function-code \
+          --region us-east-2 \
+          --function-name ${{ matrix.functions.function_name }} \
+          --zip-file fileb://./deployment.zip
+      
