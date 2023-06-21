@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/aws/aws-lambda-go v1.39.1
-	github.com/go-acme/lego/v4 v4.10.2
+	github.com/go-acme/lego/v4 v4.12.3
 	github.com/samber/lo v1.38.1
 	github.com/urfave/cli/v2 v2.14.0
 )
@@ -85,6 +85,7 @@ require (
 	github.com/nrdcg/freemyip v0.2.0 // indirect
 	github.com/nrdcg/goinwx v0.8.2 // indirect
 	github.com/nrdcg/namesilo v0.2.1 // indirect
+	github.com/nrdcg/nodion v0.1.0 // indirect
 	github.com/nrdcg/porkbun v0.2.0 // indirect
 	github.com/opentracing/opentracing-go v1.2.1-0.20220228012449-10b1cf09e00b // indirect
 	github.com/oracle/oci-go-sdk v24.3.0+incompatible // indirect
@@ -100,6 +101,7 @@ require (
 	github.com/sacloud/iaas-api-go v1.8.3 // indirect
 	github.com/sacloud/packages-go v0.0.8 // indirect
 	github.com/scaleway/scaleway-sdk-go v1.0.0-beta.15 // indirect
+	github.com/simplesurance/bunny-go v0.0.0-20221115111006-e11d9dc91f04 // indirect
 	github.com/sirupsen/logrus v1.9.0 // indirect
 	github.com/smartystreets/go-aws-auth v0.0.0-20180515143844-0c1422d1fdb9 // indirect
 	github.com/softlayer/softlayer-go v1.1.2 // indirect
