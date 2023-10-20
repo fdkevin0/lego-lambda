@@ -23,7 +23,7 @@ jobs:
             function_name: lego-lambda
     steps:
       - name: checkout source code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Install Go
         uses: actions/setup-go@v4
         with:
