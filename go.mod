@@ -6,7 +6,7 @@ require (
 	github.com/aws/aws-lambda-go v1.39.1
 	github.com/go-acme/lego/v4 v4.10.2
 	github.com/samber/lo v1.38.1
-	github.com/urfave/cli/v2 v2.14.0
+	github.com/urfave/cli/v2 v2.27.7
 )
 
 require (
@@ -34,7 +34,7 @@ require (
 	github.com/civo/civogo v0.3.26 // indirect
 	github.com/cloudflare/cloudflare-go v0.49.0 // indirect
 	github.com/cpu/goacmedns v0.1.1 // indirect
-	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
+	github.com/cpuguy83/go-md2man/v2 v2.0.7 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/deepmap/oapi-codegen v1.12.4 // indirect
 	github.com/dimchansky/utfbom v1.1.1 // indirect
@@ -113,7 +113,7 @@ require (
 	github.com/ultradns/ultradns-go-sdk v1.4.1-20230224143201-0d8b0f6 // indirect
 	github.com/vinyldns/go-vinyldns v0.9.16 // indirect
 	github.com/vultr/govultr/v2 v2.17.2 // indirect
-	github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673 // indirect
+	github.com/xrash/smetrics v0.0.0-20240521201337-686a1a2994c1 // indirect
 	github.com/yandex-cloud/go-genproto v0.0.0-20230320093702-e4c1ef6f6bd7 // indirect
 	github.com/yandex-cloud/go-sdk v0.0.0-20230320094102-300f05a59dfc // indirect
 	go.opencensus.io v0.24.0 // indirect
