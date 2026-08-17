@@ -1,12 +1,13 @@
 module github.com/fdkevin0/lego-lambda
 
-go 1.20
+go 1.22
 
 require (
 	github.com/aws/aws-lambda-go v1.39.1
 	github.com/go-acme/lego/v4 v4.10.2
 	github.com/samber/lo v1.38.1
 	github.com/urfave/cli/v2 v2.14.0
+	github.com/urfave/cli/v3 v3.11.0
 )
 
 require (
@@ -105,8 +106,8 @@ require (
 	github.com/softlayer/softlayer-go v1.1.2 // indirect
 	github.com/softlayer/xmlrpc v0.0.0-20200409220501-5f089df7cb7e // indirect
 	github.com/spf13/cast v1.5.0 // indirect
-	github.com/stretchr/objx v0.5.0 // indirect
-	github.com/stretchr/testify v1.8.2 // indirect
+	github.com/stretchr/objx v0.5.2 // indirect
+	github.com/stretchr/testify v1.11.1 // indirect
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common v1.0.624 // indirect
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/dnspod v1.0.624 // indirect
 	github.com/transip/gotransip/v6 v6.20.0 // indirect
